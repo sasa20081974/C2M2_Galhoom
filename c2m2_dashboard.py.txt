@@ -46,4 +46,24 @@ def main():
         st.write("Please upload the C2M2 Excel file to proceed.")
 
 if __name__ == "__main__":
+    st.write("## Streamlit Cloud Setup Instructions")
+    st.markdown(
+        """### To Deploy This App from GitHub:
+        1. Go to **[Streamlit Cloud](https://share.streamlit.io)**.
+        2. Click **Sign In** and log in with GitHub.
+        3. Click **Deploy a Public App from GitHub**.
+        4. Connect your GitHub repository containing `c2m2_dashboard.py`.
+        5. In the **Branch** field, select your main branch.
+        6. In the **Main File Path** field, type `c2m2_dashboard.py`.
+        7. Click **Deploy**.
+
+        **Note:** If you do not have a GitHub repo, create one and upload your script file there.
+
+        Once the app is deployed, Streamlit Cloud will provide you with a shareable public URL.
+
+        ### No GitHub? Upload Directly:
+        - Use **Streamlit Community Templates** or **drag your script into their upload area**.
+        - Alternatively, use **Replit** or **Google Colab** for quick cloud-based development.
+
+        """)
     main()
